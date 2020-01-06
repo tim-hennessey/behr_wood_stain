@@ -19,8 +19,10 @@ body {
 
     .text {
         position: absolute;
-        top: 350px;
+        top: 0;
         left: 300px;
+        width: $banner-width;
+        height: $banner-height;
         transform: translate3d(0, 0, 0.1px);
     }
 
@@ -51,7 +53,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-       opacity:0;
+        opacity:0;
     }
 
     #button-exit {
