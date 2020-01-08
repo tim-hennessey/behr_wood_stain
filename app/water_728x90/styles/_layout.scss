@@ -1,0 +1,95 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+.default {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#banner {
+	background: #698987;
+    overflow: hidden;
+    width: $banner-width;
+    height: $banner-height;
+    opacity: 0;
+
+    .text {
+        position: absolute;
+        top: 0;
+        left: 728px;
+        width: $banner-width;
+        height: $banner-height;
+        transform: translate3d(0, 0, 0.1px);
+    }
+
+    
+
+    #curtain {
+        background: #698987;
+        width: 440px;
+        height: $banner-height;
+    }
+
+
+    #logo1 {
+        position: absolute;
+        top: 28px;
+        left: 15px;
+        // transform: translate3d(0, 0, 0.1px);
+        width: 140px;
+        // height: 38.36px;
+        // 153.62 38.36
+        // clip: rect(0px, 300px, 300px, 0px);
+    }
+
+    #logo2 {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        // transform: translate3d(0, 0, 0.1px);
+        width: 40px;
+        // height: 58.85px;
+        // 49.44 58.85
+        // clip: rect(300px, 300px, 600px, 0px);
+    }
+
+    #img {
+        position: absolute;
+        top: 0;
+        left: 728px;
+        transform: translate3d(0, 0, 0.1px);
+    }
+
+    #cta {
+        position: absolute;
+        bottom: 31px;
+        right: 20px;
+        opacity:0;
+        width: 95px;
+        // height: 33.84px;
+        // 123.97 33.84
+    }
+
+    #button-exit {
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+    }
+
+    #border {
+      display: block;
+      width: $banner-width;
+      height: $banner-height;
+      pointer-events: none;
+      outline: solid 1px #000;
+      outline-offset: -1px;
+      z-index: 999;
+  }
+
+
+}
