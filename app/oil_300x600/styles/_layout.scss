@@ -11,7 +11,7 @@ body {
 }
 
 #banner {
-	background: #698987;
+	background: #bdb991;
     overflow: hidden;
     width: $banner-width;
     height: $banner-height;
@@ -25,6 +25,21 @@ body {
         height: $banner-height;
         transform: translate3d(0, 0, 0.1px);
     }
+
+    .textb {
+        position: absolute;
+        top: 0;
+        left: 300px;
+        width: $banner-width;
+        height: $banner-height;
+        transform: translate3d(0, 0, 0.1px);
+        clip: rect(450px, 300px, 600px, 0px);
+    }
+
+    #txt2 {
+        clip: rect(0px, 300px, 450px, 0px);
+    }
+
 
     #logo1 {
         position: absolute;

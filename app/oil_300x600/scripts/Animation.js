@@ -6,8 +6,11 @@ app.Animation = (function () {
 	var banner = document.getElementById('banner');
 	var txt1 = document.getElementById("txt1");
 	var txt2 = document.getElementById("txt2");
+	var txt2b = document.getElementById("txt2b");
 	var txt3 = document.getElementById("txt3");
 	var txt4 = document.getElementById("txt4");
+	var txt5 = document.getElementById("txt5");
+	var txt6 = document.getElementById("txt6");
 	var logo2 = document.getElementById("logo2");
 	var cta = document.getElementById("cta");
 
@@ -37,8 +40,11 @@ app.Animation = (function () {
 		.to(txt2, 1, {x:'-=300', ease: Expo.easeOut})
 		.to("#blur2feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
 
-		.to(txt2, 1, {x:'-=300', ease: Expo.easeIn}, "+=1")
-		.to("#blur2feGaussianBlur", .9, {attr:{stdDeviation:"20 0"}, ease:Expo.easeIn}, "-=.9")
+		.to(txt2b, 1, {x:'-=300', ease: Expo.easeOut}, "-=1")
+		.to("#blur2bfeGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
+
+		.to(txt2b, 1, {x:'-=300', ease: Expo.easeIn}, "+=1")
+		.to("#blur2bfeGaussianBlur", .9, {attr:{stdDeviation:"20 0"}, ease:Expo.easeIn}, "-=.9")
 
 		.to(txt3, 1, {x:'-=300', ease: Expo.easeOut})
 		.to("#blur3feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
@@ -48,6 +54,21 @@ app.Animation = (function () {
 
 		.to(txt4, 1, {x:'-=300', ease: Expo.easeOut})
 		.to("#blur4feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
+
+		.to(txt4, 1, {x:'-=300', ease: Expo.easeIn}, "+=1")
+		.to("#blur4feGaussianBlur", .9, {attr:{stdDeviation:"20 0"}, ease:Expo.easeIn}, "-=.9")
+
+		.to(txt5, 1, {x:'-=300', ease: Expo.easeOut})
+		.to("#blur5feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
+
+		.to(txt5, 1, {x:'-=300', ease: Expo.easeIn}, "+=1")
+		.to("#blur5feGaussianBlur", .9, {attr:{stdDeviation:"20 0"}, ease:Expo.easeIn}, "-=.9")
+
+		.to(txt2, 1, {x:'-=300', ease: Expo.easeIn}, "-=1")
+		.to("#blur2feGaussianBlur", .9, {attr:{stdDeviation:"20 0"}, ease:Expo.easeIn}, "-=.9")
+
+		.to(txt6, 1, {x:'-=300', ease: Expo.easeOut})
+		.to("#blur6feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
 
 		.to(logo2, .5, {opacity:0})
 		.to(cta, .5, {opacity:1}, "-=.25");
