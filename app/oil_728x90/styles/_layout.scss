@@ -40,6 +40,16 @@ body {
         clip: rect(0px, 440px, 90px, 0px);
     }
 
+    #cover {
+        background: #bdb991;
+        // background: #fff;
+        top: 50px;
+        left: 435px;
+        width: 4px;
+        height: 10px;
+        opacity:0;
+    }
+
     #curtain {
         background: #bdb991;
         width: 440px;

@@ -11,6 +11,7 @@ app.Animation = (function () {
 	var txt4 = document.getElementById("txt4");
 	var txt5 = document.getElementById("txt5");
 	var txt6 = document.getElementById("txt6");
+	var cover = document.getElementById("cover");
 	var logo2 = document.getElementById("logo2");
 	var cta = document.getElementById("cta");
 
@@ -34,11 +35,13 @@ app.Animation = (function () {
 		.to(txt1, 1, {x:'-=728', ease: Expo.easeOut}, "-=.75")
 		.to("#blur1feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
 
-		.to(txt1, 1, {x:'-=728', ease: Expo.easeIn}, "+=1")
-		.to("#blur1feGaussianBlur", .9, {attr:{stdDeviation:"20 0"}, ease:Expo.easeIn}, "-=.9")
+		.to(cover, 1, {opacity:1}, "+=1")
 
-		.to(txt2, 1, {x:'-=728', ease: Expo.easeOut})
-		.to("#blur2feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
+		// .to(txt1, 1, {x:'-=728', ease: Expo.easeIn}, "+=1")
+		// .to("#blur1feGaussianBlur", .9, {attr:{stdDeviation:"20 0"}, ease:Expo.easeIn}, "-=.9")
+
+		// .to(txt2, 1, {x:'-=728', ease: Expo.easeOut})
+		// .to("#blur2feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
 
 		.to(txt2b, 1, {x:'-=728', ease: Expo.easeOut}, "-=1")
 		.to("#blur2bfeGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
@@ -64,8 +67,10 @@ app.Animation = (function () {
 		.to(txt5, 1, {x:'-=728', ease: Expo.easeIn}, "+=1")
 		.to("#blur5feGaussianBlur", .9, {attr:{stdDeviation:"20 0"}, ease:Expo.easeIn}, "-=.9")
 
-		.to(txt2, 1, {x:'-=728', ease: Expo.easeIn}, "-=1")
-		.to("#blur2feGaussianBlur", .9, {attr:{stdDeviation:"20 0"}, ease:Expo.easeIn}, "-=.9")
+		.to(cover, 1, {x:'-=728', ease: Expo.easeIn}, "-=1")
+
+		.to(txt1, 1, {x:'-=728', ease: Expo.easeIn}, "-=1")
+		.to("#blur1feGaussianBlur", .9, {attr:{stdDeviation:"20 0"}, ease:Expo.easeIn}, "-=.9")
 
 		.to(txt6, 1, {x:'-=728', ease: Expo.easeOut})
 		.to("#blur6feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")

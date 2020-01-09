@@ -40,6 +40,16 @@ body {
         clip: rect(0px, 160px, 415px, 0px);
     }
 
+    #cover {
+        background: #bdb991;
+        // background: #fff;
+        top: 400px;
+        left: 115px;
+        width: 10px;
+        height: 10px;
+        opacity:0;
+    }
+
 
     #logo1 {
         position: absolute;
