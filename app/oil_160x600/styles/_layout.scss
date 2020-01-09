@@ -10,6 +10,16 @@ body {
 	left: 0;
 }
 
+ #border {
+      display: block;
+      width: $banner-width;
+      height: $banner-height;
+      pointer-events: none;
+      outline: solid 1px #000;
+      outline-offset: -1px;
+      z-index: 999;
+  }
+
 #banner {
 	background: #bdb991;
     overflow: hidden;
@@ -97,15 +107,7 @@ body {
         width: 100%;
     }
 
-    #border {
-      display: block;
-      width: $banner-width;
-      height: $banner-height;
-      pointer-events: none;
-      outline: solid 1px #000;
-      outline-offset: -1px;
-      z-index: 999;
-  }
+   
 
 
 }
