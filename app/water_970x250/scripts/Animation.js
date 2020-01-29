@@ -35,26 +35,22 @@ app.Animation = (function () {
 		.to("#blur1feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
 
 		.to(txt1, 1, {x:'-=970', ease: Expo.easeIn}, "+=1")
-		.to("#blur1feGaussianBlur", .9, {attr:{stdDeviation:"20 0"}, ease:Expo.easeIn}, "-=.9")
+		.to("#blur1feGaussianBlur", .9, {attr:{stdDeviation:"20 0"}, ease:Expo.easeIn}, "-=1")
 
-		.to(txt2, 1, {x:'-=970', ease: Expo.easeOut})
+		.to(txt2, 1, {x:'-=970', ease: Expo.easeOut}, "-=.25")
 		.to("#blur2feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
 
 		.to(txt2, 1, {x:'-=970', ease: Expo.easeIn}, "+=1")
-		.to("#blur2feGaussianBlur", .9, {attr:{stdDeviation:"20 0"}, ease:Expo.easeIn}, "-=.9")
+		.to("#blur2feGaussianBlur", .9, {attr:{stdDeviation:"20 0"}, ease:Expo.easeIn}, "-=1")
 
-		.to(txt3, 1, {x:'-=970', ease: Expo.easeOut})
+		.to(txt3, 1, {x:'-=970', ease: Expo.easeOut}, "-=.25")
 		.to("#blur3feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
 
-		.to(txt3, 1, {x:'-=970', ease: Expo.easeIn}, "+=1")
-		.to("#blur3feGaussianBlur", .9, {attr:{stdDeviation:"20 0"}, ease:Expo.easeIn}, "-=.9")
+		.to(txt3, .75, {y:'-=40', ease: Sine.easeInOut}, "+=1")
 
-		.to(txt4, 1, {x:'-=970', ease: Expo.easeOut})
+		.to(txt4, 1, {x:'-=970', ease: Expo.easeOut}, "-=.25")
 		.to("#blur4feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
 
-		
-
-		.to(logo2, .5, {opacity:0})
 		.to(cta, .5, {opacity:1}, "-=.25");
 						
 	}
