@@ -36,68 +36,33 @@ body {
         transform: translate3d(0, 0, 0.1px);
     }
 
-    .textb {
-        position: absolute;
-        top: 0;
-        left: 300px;
-        width: $banner-width;
-        height: $banner-height;
-        transform: translate3d(0, 0, 0.1px);
-        clip: rect(450px, 300px, 600px, 0px);
-    }
-
-    #txt2 {
-        clip: rect(0px, 300px, 450px, 0px);
-    }
-
-    #cover {
-        background: #bdb991;
-        // background: #fff;
-        top: 430px;
-        left: 230px;
-        width: 10px;
-        height: 10px;
-        opacity:0;
-    }
-
-
     #logo1 {
         position: absolute;
-        top: 35px;
-        left: 77px;
-        // transform: translate3d(0, 0, 0.1px);
-        width: 153.62px;
-        height: 38.36px;
-        // 153.62 38.36
-        // clip: rect(0px, 300px, 300px, 0px);
+        top: 40px;
+        left: 79px;
+        width: 145px;
     }
 
     #logo2 {
         position: absolute;
-        bottom: 18px;
-        left: 125px;
-        // transform: translate3d(0, 0, 0.1px);
-        width: 49.44px;
-        height: 58.85px;
-        // 49.44 58.85
-        // clip: rect(300px, 300px, 600px, 0px);
+        bottom: 20px;
+        right: 20px;
+        width: 35px;
     }
 
     #img {
         position: absolute;
         top: 108px;
-        left: 300px;
+        right: 37px;
         transform: translate3d(0, 0, 0.1px);
     }
 
     #cta {
         position: absolute;
-        bottom: 33px;
-        left: 87px;
+        bottom: 20px;
+        left: 20px;
         opacity:0;
-        width: 123.97px;
-        height: 33.84px;
-        // 123.97 33.84
+        width: 133px;
     }
 
     #button-exit {

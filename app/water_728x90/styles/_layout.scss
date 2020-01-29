@@ -21,7 +21,7 @@ body {
   }
 
 #banner {
-	background: #698987;
+	background: #bdb991;
     overflow: hidden;
     width: $banner-width;
     height: $banner-height;
@@ -36,35 +36,26 @@ body {
         transform: translate3d(0, 0, 0.1px);
     }
 
-    
-
-    #curtain {
-        background: #698987;
-        width: 440px;
+    #txtContainer {
+        width: $banner-width;
         height: $banner-height;
+        // pointer-events: none;
+        clip: rect(0px, 728px, 90px, 180px);
     }
-
 
     #logo1 {
         position: absolute;
-        top: 28px;
-        left: 15px;
-        // transform: translate3d(0, 0, 0.1px);
-        width: 140px;
-        // height: 38.36px;
-        // 153.62 38.36
-        // clip: rect(0px, 300px, 300px, 0px);
+        top: 32px;
+        left: 20px;
+        width: 103px;
     }
 
     #logo2 {
         position: absolute;
-        bottom: 20px;
-        right: 20px;
-        // transform: translate3d(0, 0, 0.1px);
-        width: 40px;
-        // height: 58.85px;
-        // 49.44 58.85
-        // clip: rect(300px, 300px, 600px, 0px);
+        bottom: 5px;
+        right: 5px;
+        width: 22px;
+        
     }
 
     #img {
@@ -77,11 +68,9 @@ body {
     #cta {
         position: absolute;
         bottom: 31px;
-        right: 20px;
+        right: 43px;
         opacity:0;
-        width: 95px;
-        // height: 33.84px;
-        // 123.97 33.84
+        width: 133px;
     }
 
     #button-exit {
@@ -90,8 +79,4 @@ body {
         height: 100%;
         width: 100%;
     }
-
-    
-
-
 }

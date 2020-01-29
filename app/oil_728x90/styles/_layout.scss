@@ -36,54 +36,38 @@ body {
         transform: translate3d(0, 0, 0.1px);
     }
 
-    .textb {
-        position: absolute;
-        top: 0;
-        left: 728px;
+    #txtContainer1 {
+
         width: $banner-width;
         height: $banner-height;
-        transform: translate3d(0, 0, 0.1px);
-        clip: rect(0px, 728px, 90px, 440px);
+        // pointer-events: none;
+        clip: rect(0px, 728px, 90px, 180px);
     }
 
-    #txt2 {
-        clip: rect(0px, 440px, 90px, 0px);
-    }
+    #txtContainer2 {
 
-    #cover {
-        background: #bdb991;
-        // background: #fff;
-        top: 50px;
-        left: 435px;
-        width: 4px;
-        height: 10px;
-        opacity:0;
-    }
-
-    #curtain {
-        background: #bdb991;
-        width: 440px;
+        width: $banner-width;
         height: $banner-height;
+        // pointer-events: none;
+        clip: rect(0px, 728px, 90px, 445px);
     }
+
+    
 
 
     #logo1 {
         position: absolute;
-        top: 28px;
-        left: 15px;
-        // transform: translate3d(0, 0, 0.1px);
-        width: 140px;
-        // height: 38.36px;
-        // 153.62 38.36
-        // clip: rect(0px, 300px, 300px, 0px);
+        top: 32px;
+        left: 20px;
+        width: 103px;
     }
 
     #logo2 {
         position: absolute;
-        bottom: 20px;
-        right: 20px;
+        bottom: 5px;
+        right: 5px;
         // transform: translate3d(0, 0, 0.1px);
-        width: 40px;
+        width: 22px;
         // height: 58.85px;
         // 49.44 58.85
         // clip: rect(300px, 300px, 600px, 0px);
@@ -99,9 +83,9 @@ body {
     #cta {
         position: absolute;
         bottom: 31px;
-        right: 20px;
+        right: 85px;
         opacity:0;
-        width: 95px;
+        width: 133px;
         // height: 33.84px;
         // 123.97 33.84
     }
