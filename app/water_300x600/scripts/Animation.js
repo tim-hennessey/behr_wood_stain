@@ -21,7 +21,9 @@ app.Animation = (function () {
 	// set default properties
 	function initialize() {
 		// DO NOT EDIT: reveals banner once loaded
-		t.set(banner, {opacity:1});		
+		t.set(banner, {opacity:1});
+		// .set(txt1, {display:"none"})
+		// .set(txt1, {display:"block"})
 	}
 
 	// --------------------------------------------------------------------------------------
@@ -29,22 +31,28 @@ app.Animation = (function () {
 	function start() {
 		
 
-		tl1.from(img, 1, {x:'+=300', ease: Expo.easeOut})
+		tl1.set(txt1, {display:"block"})
+		.from(img, 1, {x:'+=300', ease: Expo.easeOut})
 		.to(txt1, 1, {x:'-=300', ease: Expo.easeOut}, "-=.75")
 		.to("#blur1feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
 
 		.to(txt1, 1, {x:'-=300', ease: Expo.easeIn}, "+=1")
 		.to("#blur1feGaussianBlur", .9, {attr:{stdDeviation:"20 0"}, ease:Expo.easeIn}, "-=1")
+		.set(txt1, {display:"none"})
 
-		.to(txt2, 1, {x:'-=300', ease: Expo.easeOut}, "-=.25")
+		.set(txt2, {display:"block"}, "-=.25")
+		.to(txt2, 1, {x:'-=300', ease: Expo.easeOut})
 		.to("#blur2feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
 
 		.to(txt2, 1, {x:'-=300', ease: Expo.easeIn}, "+=1")
 		.to("#blur2feGaussianBlur", .9, {attr:{stdDeviation:"20 0"}, ease:Expo.easeIn}, "-=1")
+		.set(txt2, {display:"none"})
 
-		.to(txt3, 1, {x:'-=300', ease: Expo.easeOut}, "-=.25")
+		.set(txt3, {display:"block"}, "-=.25")
+		.to(txt3, 1, {x:'-=300', ease: Expo.easeOut})
 		.to("#blur3feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
 
+		.set(txt4, {display:"block"})
 		.to(txt4, 1, {x:'-=300', ease: Expo.easeOut}, "+=1")
 		.to("#blur4feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
 
