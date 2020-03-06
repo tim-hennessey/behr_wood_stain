@@ -40,50 +40,66 @@ body {
     #curtain {
         width: $banner-width;
         height: $banner-height;
+        // background-color: rgba(255, 255, 255, .5);
 
 
         #curtainTop {
             width: $banner-width;
             height: $banner-height;
-            clip: rect(0px,300px,425px,0px);
+            clip: rect(0px,300px,112px,0px);
             background-color: rgba(255, 255, 255, .5);
         }
 
         #curtainBottom {
             width: $banner-width;
             height: $banner-height;
-            clip: rect(460px,300px,600px,0px);
+            clip: rect(138px,300px,250px,0px);
             background-color: rgba(255, 255, 255, .5);
         }
     }
 
+    
+
+    
+
+
     #logo1 {
         position: absolute;
-        top: 20px;
-        left: 79px;
-        width: 145px;
+        top: 12px;
+        right: 10px;
+        // transform: translate3d(0, 0, 0.1px);
+        width: 102px;
+        // height: 38.36px;
+        // 153.62 38.36
+        // clip: rect(0px, 300px, 300px, 0px);
     }
 
     #logo2 {
         position: absolute;
-        bottom: 10px;
+        bottom: 12px;
         right: 10px;
+        // transform: translate3d(0, 0, 0.1px);
         width: 28px;
+        // height: 58.85px;
+        // 49.44 58.85
+        // clip: rect(300px, 300px, 600px, 0px);
     }
 
     #img {
         position: absolute;
-        top: 72px;
-        right: 37px;
+        top: 50px;
+        right: 0;
         transform: translate3d(0, 0, 0.1px);
     }
 
     #cta {
         position: absolute;
-        bottom: 75px;
-        left: 84px;
+        bottom: 12px;
+        left: 10px;
         opacity:0;
         width: 133px;
+        // height: 33.84px;
+        // 123.97 33.84
     }
 
     #button-exit {

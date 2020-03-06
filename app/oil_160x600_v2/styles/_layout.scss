@@ -10,7 +10,7 @@ body {
 	left: 0;
 }
 
-#border {
+ #border {
       display: block;
       width: $banner-width;
       height: $banner-height;
@@ -45,23 +45,23 @@ body {
         #curtainTop {
             width: $banner-width;
             height: $banner-height;
-            clip: rect(0px,300px,425px,0px);
+            clip: rect(0px,160px,378px,0px);
             background-color: rgba(255, 255, 255, .5);
         }
 
         #curtainBottom {
             width: $banner-width;
             height: $banner-height;
-            clip: rect(460px,300px,600px,0px);
+            clip: rect(407px,160px,600px,0px);
             background-color: rgba(255, 255, 255, .5);
         }
     }
 
     #logo1 {
         position: absolute;
-        top: 20px;
-        left: 79px;
-        width: 145px;
+        top: 40px;
+        left: 23px;
+        width: 116px;
     }
 
     #logo2 {
@@ -73,17 +73,17 @@ body {
 
     #img {
         position: absolute;
-        top: 72px;
-        right: 37px;
+        top: 105px;
+        right: 0;
         transform: translate3d(0, 0, 0.1px);
     }
 
     #cta {
         position: absolute;
-        bottom: 75px;
-        left: 84px;
+        bottom: 125px;
+        left: 20px;
         opacity:0;
-        width: 133px;
+        width: 120px;
     }
 
     #button-exit {
@@ -93,7 +93,7 @@ body {
         width: 100%;
     }
 
-    
+   
 
 
 }
