@@ -57,11 +57,7 @@ body {
         position: absolute;
         bottom: 12px;
         right: 10px;
-        // transform: translate3d(0, 0, 0.1px);
         width: 28px;
-        // height: 58.85px;
-        // 49.44 58.85
-        // clip: rect(300px, 300px, 600px, 0px);
     }
 
     #img {
@@ -71,14 +67,25 @@ body {
         transform: translate3d(0, 0, 0.1px);
     }
 
-    #cta {
+   #cta {
         position: absolute;
         bottom: 12px;
         left: 10px;
         opacity:0;
         width: 133px;
-        // height: 33.84px;
-        // 123.97 33.84
+        height: 27px;
+        background: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+
+        #cta_txt {
+        position: absolute;
+        top: -3px;
+        left: 0;
+        width: 132px;
+        height: 34px;
+        
+    }
     }
 
     #button-exit {

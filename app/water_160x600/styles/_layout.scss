@@ -46,9 +46,9 @@ body {
 
     #logo2 {
         position: absolute;
-        bottom: 20px;
-        right: 20px;
-        width: 35px;
+        bottom: 12px;
+        right: 10px;
+        width: 28px;
     }
 
     #img {
@@ -60,10 +60,23 @@ body {
 
     #cta {
         position: absolute;
-        bottom: 80px;
+        bottom: 70px;
         left: 20px;
         opacity:0;
         width: 120px;
+        height: 34px;
+        background: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+
+        #cta_txt {
+        position: absolute;
+        top: 0;
+        left: -6px;
+        width: 132px;
+        height: 34px;
+        
+    }
     }
 
     #button-exit {

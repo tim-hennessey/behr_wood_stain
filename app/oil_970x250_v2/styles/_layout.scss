@@ -1,0 +1,115 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+.default {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#border {
+    display: block;
+    width: $banner-width;
+    height: $banner-height;
+    pointer-events: none;
+    outline: solid 1px #000;
+    outline-offset: -1px;
+    z-index: 999;
+}
+
+#banner {
+    background: #bdb991;
+    overflow: hidden;
+    width: $banner-width;
+    height: $banner-height;
+    opacity: 0;
+
+    #txtContainer {
+
+        width: $banner-width;
+        height: $banner-height;
+        pointer-events: none;
+        clip: rect(0px, 970px, 250px, 395px);
+    }
+
+    .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $banner-width;
+        height: $banner-height;
+        transform: translate3d(0, 0, 0.1px);
+        display: none;
+    }
+
+    #curtain {
+        width: $banner-width;
+        height: $banner-height;
+        // opacity:0;
+
+
+        #curtainTop {
+            width: $banner-width;
+            height: $banner-height;
+            clip: rect(0px,970px, 155px,0px);
+            background-color: rgba(255, 255, 255, .5);
+        }
+
+        #curtainBottom {
+            width: $banner-width;
+            height: $banner-height;
+            clip: rect(205px,970px,250px,0px);
+            background-color: rgba(255, 255, 255, .5);
+        }
+    }
+
+    #logo1 {
+        position: absolute;
+        top: 100px;
+        left: 40px;
+        width: 175px;
+    }
+
+    #logo2 {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 28px;
+    }
+
+    #img {
+        position: absolute;
+        top: 0;
+        left: 970px;
+        transform: translate3d(0, 0, 0.1px);
+    }
+
+    #cta {
+        position: absolute;
+        top: 100px;
+        right: 20px;
+        opacity:0;
+        width: 133px;
+        height: 50px;
+        background: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+
+        #cta_txt {
+        position: absolute;
+        top: 8px;
+        
+    }
+    }
+
+    #button-exit {
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+    }
+
+}

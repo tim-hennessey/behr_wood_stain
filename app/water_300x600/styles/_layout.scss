@@ -29,7 +29,7 @@ body {
 
     .text {
         position: absolute;
-        top: 0;
+        top: -20px;
         left: 300px;
         width: $banner-width;
         height: $banner-height;
@@ -37,33 +37,37 @@ body {
         display: none;
     }
 
-    #logo1 {
+     #logo1 {
         position: absolute;
-        top: 40px;
+        top: 20px;
         left: 79px;
         width: 145px;
     }
 
     #logo2 {
         position: absolute;
-        bottom: 20px;
-        right: 20px;
-        width: 35px;
+        bottom: 12px;
+        right: 10px;
+        width: 28px;
     }
 
     #img {
         position: absolute;
-        top: 108px;
-        right: 0;
+        top: 72px;
+        right: 5px;
         transform: translate3d(0, 0, 0.1px);
     }
 
     #cta {
         position: absolute;
-        bottom: 20px;
-        left: 20px;
+        bottom: 55px;
+        left: 84px;
         opacity:0;
         width: 133px;
+        height: 34px;
+        background: #fff;
+        border-radius: 3px;
+        overflow: hidden;
     }
 
     #button-exit {

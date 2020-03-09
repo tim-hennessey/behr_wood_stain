@@ -57,7 +57,8 @@ app.Animation = (function () {
 
 		
 
-		.to(cta, .5, {opacity:1}, "-=.25");
+		.to(cta, .5, {opacity:1}, "-=.25")
+		.from(cta_txt, .5, {x:"-=133"}, "-=.25");
 
 
 						

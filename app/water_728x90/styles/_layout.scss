@@ -55,8 +55,11 @@ body {
         position: absolute;
         bottom: 5px;
         right: 5px;
+        // transform: translate3d(0, 0, 0.1px);
         width: 22px;
-        
+        // height: 58.85px;
+        // 49.44 58.85
+        // clip: rect(300px, 300px, 600px, 0px);
     }
 
     #img {
@@ -68,10 +71,23 @@ body {
 
     #cta {
         position: absolute;
-        bottom: 31px;
-        right: 43px;
+        bottom: 30px;
+        right: 42px;
         opacity:0;
         width: 133px;
+        height: 27px;
+        background: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+
+        #cta_txt {
+        position: absolute;
+        top: -3px;
+        left: 0;
+        width: 132px;
+        height: 34px;
+        
+    }
     }
 
     #button-exit {

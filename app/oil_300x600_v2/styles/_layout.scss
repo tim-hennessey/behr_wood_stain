@@ -66,7 +66,7 @@ body {
 
     #logo2 {
         position: absolute;
-        bottom: 10px;
+        bottom: 12px;
         right: 10px;
         width: 28px;
     }
@@ -84,6 +84,10 @@ body {
         left: 84px;
         opacity:0;
         width: 133px;
+        height: 34px;
+        background: #fff;
+        border-radius: 3px;
+        overflow: hidden;
     }
 
     #button-exit {

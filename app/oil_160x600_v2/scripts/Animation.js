@@ -56,7 +56,8 @@ app.Animation = (function () {
 		.to(txt4, 1, {y:'-=40', ease: Expo.easeInOut}, "+=1")
 		.set(txt4, {display:"none"})
 
-		.to("#curtainBottom", 1, {y:'+=40', ease: Expo.easeInOut}, "-=1")
+		.to("#curtainBottom", 1, {clip: "rect(447px, 160px, 600px, 0px)", ease: Expo.easeInOut}, "-=1")
+		// .to("#curtainBottom", 1, {y:'+=40', ease: Expo.easeInOut}, "-=1")
 
 		.set(txt5, {display:"block"}, "-=1")
 		.to(txt5, 1, {y:'-=40', ease: Expo.easeInOut}, "-=1")
@@ -73,7 +74,8 @@ app.Animation = (function () {
 		.to(txt6, 1, {x:'-=160', ease: Expo.easeOut})
 		.to("#blur6feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
 
-		.to(cta, .5, {opacity:1}, "-=.25");
+		.to(cta, .5, {opacity:1}, "-=.25")
+		.from(cta_txt, .5, {x:"-=133"}, "-=.25");
 						
 	}
 

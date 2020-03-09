@@ -63,7 +63,8 @@ app.Animation = (function () {
 		.to(txt4, 1, {x:'-=728', ease: Expo.easeOut}, "-=.25")
 		.to("#blur4feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
 
-		.to(cta, .5, {opacity:1}, "-=.25");
+		.to(cta, .5, {opacity:1}, "-=.25")
+		.from(cta_txt, .5, {x:"-=133"}, "-=.25");
 						
 	}
 
