@@ -7,7 +7,7 @@ app.Animation = (function () {
 	var txt1 = document.getElementById("txt1");
 	var txt2 = document.getElementById("txt2");
 	var txt3a = document.getElementById("txt3a");
-	var txt3b = document.getElementById("txt3b");
+	// var txt3b = document.getElementById("txt3b");
 	var txt4 = document.getElementById("txt4");
 	
 	// var txtContainer1 = document.getElementById("txtContainer1");
@@ -53,14 +53,14 @@ app.Animation = (function () {
 		.to(txt3a, 1, {x:'-=728', ease: Expo.easeOut})
 		.to("#blur3afeGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
 
-		.to(txt3b, 1, {display:"block", x:'-=728', ease: Expo.easeOut}, "-=1")
-		.to("#blur3bfeGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
+		// .to(txt3b, 1, {display:"block", x:'-=728', ease: Expo.easeOut}, "-=1")
+		// .to("#blur3bfeGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
 
 		.to(txt3a, .75, {y:'-=17', ease: Sine.easeInOut}, "+=1")
-		.to(txt3b, .75, {y:"-=17", opacity:0, ease: Sine.easeInOut}, "-=.75")
+		// .to(txt3b, .75, {y:"-=17", opacity:0, ease: Sine.easeInOut}, "-=.75")
 
-		.set(txt4, {display:"block"})
-		.to(txt4, 1, {x:'-=728', ease: Expo.easeOut}, "-=.25")
+		.set(txt4, {display:"block"}, "-=.25")
+		.to(txt4, 1, {x:'-=728', ease: Expo.easeOut})
 		.to("#blur4feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
 
 		.to(cta, .5, {opacity:1}, "-=.25")

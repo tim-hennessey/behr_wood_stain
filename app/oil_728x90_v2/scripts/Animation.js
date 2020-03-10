@@ -5,6 +5,7 @@ app.Animation = (function () {
 
 	var banner = document.getElementById('banner');
 	var txt1 = document.getElementById("txt1");
+	var tm = document.getElementById("tm");
 	var txt2 = document.getElementById("txt2");
 	var txt3 = document.getElementById("txt3");
 	var txt4 = document.getElementById("txt4");
@@ -24,6 +25,7 @@ app.Animation = (function () {
 		// DO NOT EDIT: reveals banner once loaded
 		t.set(banner, {opacity:1});
 		t.set(txt1, {x:728});
+		t.set(tm, {x:728});
 		t.set(txt2, {y:50});
 		t.set(txt3, {y:50});
 		t.set(txt4, {y:50});
@@ -41,8 +43,13 @@ app.Animation = (function () {
 		.to(txt1, 1, {x:'-=728', ease: Expo.easeOut}, "-=.75")
 		.to("#blur1feGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
 
+		.set(tm, {display:"block"}, "-=1")
+		.to(tm, 1, {x:'-=728', ease: Expo.easeOut}, "-=1")
+		.to("#blurtmfeGaussianBlur", .9, {attr:{stdDeviation:"0.1 0"}, ease:Expo.easeOut}, "-=1")
+
 		.set(txt2, {display:"block"}, "+=1")
-		.to(txt2, 1, {y:'-=50', ease: Expo.easeInOut})
+		.to(tm, .5, {opacity:0})
+		.to(txt2, 1, {y:'-=50', ease: Expo.easeInOut}, "-=.75")
 		.to(txt2, 1, {y:'-=50', ease: Expo.easeInOut}, "+=1")
 		.set(txt2, {display:"none"})
 
@@ -65,6 +72,7 @@ app.Animation = (function () {
 
 		.to(txt1, 1, {x:'-=728', ease: Expo.easeIn}, "-=1")
 		.to("#blur1feGaussianBlur", .9, {attr:{stdDeviation:"20 0"}, ease:Expo.easeIn}, "-=1")
+
 
 		.set(txt6, {display:"block"}, "-=.15")
 		.to(txt6, 1, {x:'-=728', ease: Expo.easeOut})
